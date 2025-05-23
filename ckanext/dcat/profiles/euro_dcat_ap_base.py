@@ -342,7 +342,7 @@ class BaseEuropeanDCATAPProfile(RDFProfile):
             (title_key, DCT.title, None, Literal),
             (notes_key, DCT.description, None, Literal),
             ("url", DCAT.landingPage, None, URIRef, FOAF.Document),
-            ("identifier", DCT.identifier, ["guid", "id"], URIRefOrLiteral),
+            ("identifier", DCT.identifier, ["guid", "id"], Literal),
             ("version", OWL.versionInfo, ["dcat_version"], Literal),
             ("version_notes", ADMS.versionNotes, None, Literal),
             ("frequency", DCT.accrualPeriodicity, None, URIRefOrLiteral, DCT.Frequency),
